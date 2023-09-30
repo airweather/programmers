@@ -2,8 +2,6 @@
 // 로또의 최고 순위와 최저 순위
 
 function solution(lottos, win_nums) {
-    var answer = [];
-    
     let max = 0
     let min = 0
     
@@ -13,11 +11,9 @@ function solution(lottos, win_nums) {
             min++
             return;
         }
-        
         if(lotto === 0) {
             max++
         }
-        
     })
     
     const rank = (num) => {
